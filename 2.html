@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Grade</title>
+</head>
+<body>
+<script type="text/javascript">
+    var input = prompt("Input:", 90);
+    if (input >= 90){
+        input = 'A';
+    } else if (input >= 80 && input <= 89) {
+        input = 'B'
+    } else if (input >= 70 && input <= 79){
+        input = 'C'
+    } else if (input >= 60 && input <= 69){
+        input = 'D'
+    } else if ( input <= 59){
+        input = 'E'
+    }
+    document.write("Output : " + input + "<br/>");
+</script>
+</body>
+</html>

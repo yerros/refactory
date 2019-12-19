@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Film Rating</title>
+</head>
+<body>
+        <input type="number" id="umur" placeholder="Masukkan Umur"></input>
+        <button onclick="submit()">Submit</button>
+<script type="text/javascript">
+    function submit(){
+        var input = parseInt(document.getElementById('umur').value);
+        var output = ''
+        if (input >= 21){
+            output = 'Dewasa';
+        } else if (input >= 13){
+            output = 'Remaja';
+        } else if (input  >= 9) {
+            output = 'Bimbingan Orang tua';
+        } else if (input < 9){
+            output = 'Semua Usia'
+        }
+        document.write("Input : " + input + "<br/>");
+        document.write("Output : " + output + "<br/><br/>");
+    }
+</script>
+</body>
+</html>

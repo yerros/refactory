@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Tahun Kabisat</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    var input = prompt('input', 1900)
+    var output = ''
+    if ((input % 4) === 0){
+        if ((input % 100) !== 0){
+            output = 'Tahun Kabisat'
+        } else {
+            if ((input % 400) === 0){
+                output = 'Tahun Kabisat'
+            } else {
+                output = 'Bukan Tahun Kabisat'
+            }
+        }
+    } else {
+        output = 'Bukan Tahun Kabisat'
+    }
+    document.write("Input : " + input + "<br/>");
+    document.write("Output : " + output + "<br/><br/>");
+</script>
+</body>
+</html>
