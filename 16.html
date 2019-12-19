@@ -5,7 +5,16 @@
 <body>
 
 <script type="text/javascript">
+    var input = prompt('Input', '')
+    var checker = input.split('').reverse().join('');
 
+    if ( input === checker){
+        document.write('Palidrome');
+        console.log('Palidrome')
+    }else{
+        document.write('Bukan Palidrome');
+        console.log('Bukan Palidrome')
+    }
 </script>
 </body>
 </html>
